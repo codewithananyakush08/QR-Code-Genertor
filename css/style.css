@@ -1,0 +1,68 @@
+:root {
+  --bg-color: #112d02;
+  --primary-color: #fafafa;
+  --btn-color: #1f6f1f;
+  --green-light: #33e233;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--btn-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 30rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+
+canvas {
+  width: 50%;
+  aspect-ratio: 1;
+  border: 2px solid var(--green-light);
+  border-radius: 0.25rem;
+  display: none;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  border: 1px solid var(--btn-color);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: var(--btn-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgba(241, 102, 102, 0.2);
+}
+#qr-download {
+    display: none;
+}

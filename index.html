@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.js"
+        integrity="sha512-8nOl9ysfbFHP5BXuJ4s0tnBjGIRuuzdV3AmW2lT83aCO9FY0B+zhEx5PIEpp/hUX4WhhlOB0TXu2XZfAQugbeQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>QR Code App</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h3>Enter URL or text</h3>
+        </header>
+        <section>
+            <input type="text" id="inputText" placeholder="Enter URL or Text here">
+            <canvas id="code"></canvas>
+            <input type="text" id="fileName" placeholder="File name (optional)">
+            <button id="qr-generator">Generate QR Code</button>
+            <button id="qr-download">Download QR Code</button>
+        </section>
+
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
